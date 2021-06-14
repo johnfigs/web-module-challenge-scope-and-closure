@@ -28,11 +28,11 @@ console.log(processFirstItem(['foo','bar'],function(str){return str+str}));
   Study the code for counter1 and counter2, then answer the questions below.
   
   1. What is the difference between counter1 and counter2?
-  
+  The difference between counter1 and counter2 is that counter1 will be able to increment and keep track of an incrementing count value. Counter2 will 0 increment to 1 each time it's ran and return to 0 after.
   2. Which of the two uses a closure? How can you tell?
-  
+  They both use closure. Counter1 uses closure when when we return count++ because count was defined outside of the anonymous function. Code2 uses closure because we are returning count++, count being a variable defined outside the function. 
   3. In what scenario would the counter1 code be preferable? In what scenario would 
-     counter2 be better?  
+     counter2 be better? Counter1 will be better when we need to keep track of the counter incrementing. Counter2 will be better when we only need to increment the counter once and then forget it.  
 */
 
 // counter1 code
