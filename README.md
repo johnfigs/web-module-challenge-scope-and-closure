@@ -43,6 +43,7 @@ Find the file `index.js` and complete the tasks.
 Edit the `ReadMe` file with your answers.
 
 1. In your own words, define closure (1-2 sentences).
+Closure occurs when a piece of code goes outside its function scope to reference a variable. 
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -64,8 +65,11 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
+Closure occurs in the return function of personalDice when the console.log message references 'name'. It also occurs as we set dansRoll/zoesRoll to the function personDice. 
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+the parameter name will always be set to Dan, the variable newRoll should always be different. 
 c. What is the lexical scope of `newRoll`? 
+The lexical scope of newRoll is the anonymous function we are returning inside the personalDice function.
 
 
 ### Task 3 - Stretch Goals
