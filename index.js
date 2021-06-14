@@ -152,7 +152,7 @@ function scoreboard(getInningScoreCB, inningCB, innings) {
   let finalAway = 0;
 
   for(let i = 0; i < innings; i++){
-    inning = getInningScoreCB();
+    inning = getInningScoreCB(inningCB);
     inningHome = inning.Home;
     inningAway = inning.Away;
     scoreBoard.push(`Inning 1: Away ${inningAway} - Home ${inningHome}`);
@@ -167,8 +167,11 @@ function scoreboard(getInningScoreCB, inningCB, innings) {
     scoreBoard.push(`Final Score: Away ${finalAway} - Home ${finalHome}`);
   }
 
+  console.log(scoreBoard);
   return scoreBoard;
 }
+
+scoreboard(getInningScore, inning, 9);
 
 
 
